@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 	<meta name="author" content="Kevin Truong">
-	
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64149224-1"></script>
 	<script>
@@ -21,7 +21,7 @@
 	</script>
 
 	<link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 
 	<style>
 		html { scroll-behavior: smooth; }
@@ -31,20 +31,20 @@
 
 <body class="nunito antialiased text-gray-900 leading-normal tracking-wider bg-gray-200">
 
-  <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-24 lg:my-0">
+  <div class="max-w-5xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-24 lg:my-0">
 
 		<!-- Profile Picture -->
 		<div class="w-full lg:w-2/5">
-			<img src="./assets/images/kevin-truong.jpg" class="rounded-none lg:rounded-l-lg shadow-2xl hidden lg:block">
+			<img src="./assets/images/kevin-truong.jpg" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
 		</div>
-    
+
 		<!-- Main Card -->
 		<div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-r-lg lg:rounded-l-none shadow-2xl bg-white mx-6 lg:mx-0">
-		
+
 			<div class="p-4 md:px-12 md:pt-12 md:pb-12 text-center lg:text-left">
 				<!-- Profile Picture for Mobile View -->
 				<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('./assets/images/kevin-truong.jpg')"></div>
-				
+
 				<h1 class="text-3xl font-bold pt-8 lg:pt-0">Kevin Truong</h1>
 				<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
 				<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
@@ -119,31 +119,31 @@
 	<script>
 		tippy('.link',{
 		  placement: 'bottom'
-		})		
+		})
 	</script>
 	<script>
 		window.addEventListener("DOMContentLoaded", function() {
-	
+
 			// get the form elements defined in your form HTML above
-			
+
 			var form = document.getElementById("my-form");
 			var button = document.getElementById("my-form-button");
 			var status = document.getElementById("my-form-status");
-	
+
 			// Success and Error functions for after the form is submitted
-			
+
 			function success() {
 				form.reset();
 				button.style = "display: none ";
 				status.innerHTML = "Thanks! You should hear from me soon =)";
 			}
-	
+
 			function error() {
 				status.innerHTML = "Oops! There was a problem.";
 			}
-	
+
 			// handle the form submission event
-	
+
 			form.addEventListener("submit", function(ev) {
 				console.log("form submit clicked");
 				ev.preventDefault();
@@ -151,9 +151,9 @@
 				ajax(form.method, form.action, data, success, error);
 			});
 		});
-		
+
 		// helper function for sending an AJAX request
-	
+
 		function ajax(method, url, data, success, error) {
 			console.log("submitting?");
 			var xhr = new XMLHttpRequest();
